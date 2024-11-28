@@ -11,7 +11,7 @@ namespace AdoDotNet.Sakila
             _conn = new SqlConnection(connString);
         }
 
-        public List<string> FindFilmByActor(string firstName, string lastName)
+        public List<string> FindFilmsByActor(string firstName, string lastName)
         {
             var queryString = "select actor.first_name, actor.last_name, film.title " +
                 "from actor " +

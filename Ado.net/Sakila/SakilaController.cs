@@ -7,9 +7,9 @@
             _service = service;
         }
 
-        public List<string> FindActorByName(string firstName, string lastName)
+        public List<string> GetFilmsByActor(string firstName, string lastName)
         {
-            var result = _service.FindFilmByActor(firstName, lastName);
+            var result = _service.FindFilmsByActor(firstName, lastName);
 
             return result;
         }

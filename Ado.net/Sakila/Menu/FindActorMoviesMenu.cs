@@ -14,7 +14,7 @@ namespace AdoDotNet.Sakila.Menu
             var firstName = PrintHelper.GetStringInput("First name");
             var lastName = PrintHelper.GetStringInput("Last name");
 
-            var results = Controller.FindActorByName(firstName, lastName);
+            var results = Controller.GetFilmsByActor(firstName, lastName);
             if (results.Count <= 0)
             {
                 Console.WriteLine("Unable to find any movies by that actor.");
