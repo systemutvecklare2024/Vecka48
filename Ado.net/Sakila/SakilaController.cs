@@ -9,7 +9,7 @@
 
         public List<string> GetFilmsByActor(string firstName, string lastName)
         {
-            var result = _service.FindFilmsByActor(firstName, lastName);
+            var result = _service.FindFilmsByActorNames(firstName, lastName);
 
             return result;
         }
